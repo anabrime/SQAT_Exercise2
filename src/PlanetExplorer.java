@@ -14,6 +14,10 @@ public class PlanetExplorer {
 	 */
 	}
 	
+	public PlanetExplorer(int x, int y) {
+		this(x, y, "");
+	}
+	
 	public String executeCommand(String command){
 		
 		/* The command string is composed of "f" (forward), "b" (backward), "l" (left) and "r" (right)

@@ -5,3 +5,10 @@ RefactoringAction 1476875706956 TestPlanetExplorer.java RENAME test_PlanetExploe
 RefactoringAction 1476875711462 TestPlanetExplorer.java RENAME test_PlanetExplorer_createPlane()=>void test_PlanetExplorer_create_plane() METHOD
 RefactoringAction 1476875712467 TestPlanetExplorer.java RENAME test_PlanetExplorer_create_plane()=>void test_PlanetExplorer_create_planet() METHOD
 EditAction 1476875791564 TestPlanetExplorer.java 311 1 3 1
+CompilationAction 1476875793172 TestPlanetExplorer.java
+CompilationAction 1476875793175 TestPlanetExplorer.java
+UnitTestCaseAction 1476875802330 TestPlanetExplorer.java FAIL
+UnitTestSessionAction 1476875802333 TestPlanetExplorer.java FAIL
+RefactoringAction 1476875817074 PlanetExplorer.java ADD PlanetExplorer() METHOD
+RefactoringAction 1476875819587 PlanetExplorer.java RENAME PlanetExplorer()=>PlanetExplorer(int, int) METHOD
+EditAction 1476875874208 PlanetExplorer.java 1367 3 2 0
