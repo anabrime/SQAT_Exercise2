@@ -63,10 +63,22 @@ public class PlanetExplorer {
 		
 		if (command.equals("r")) {
 			this.direction = this.direction.right();
-		} else if (command.equals("l")) {
+		}
+		
+		if (command.equals("l")) {
 			this.direction = this.direction.left();
-		} else if (command.equals("f")) {
-			this.positionY++;
+		}
+		
+		if (command.equals("f")) {
+			if (this.direction == Direction.N) {
+				this.positionY++;
+			} else if (this.direction == Direction.E) {
+				this.positionX++;
+			} else if (this.direction == Direction.S) {
+				this.positionY--;
+			} else {
+				this.positionX--;
+			}
 		}
 		
 		return "(0," + this.positionY + "," + this.direction + ")";
