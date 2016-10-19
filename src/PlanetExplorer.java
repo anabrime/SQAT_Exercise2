@@ -65,7 +65,7 @@ public class PlanetExplorer {
 			int obstacleX = Integer.parseInt(coords[0]);
 			int obstacleY = Integer.parseInt(coords[1]);
 			
-			if (obstacleX + 1 >= x || obstacleY + 1 >= y) {
+			if (obstacleX + 1 > x || obstacleY + 1 > y) {
 				throw new PlanetExplorerException();
 			}
 			
