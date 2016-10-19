@@ -100,3 +100,8 @@ UnitTestSessionAction 1476877133135 TestPlanetExplorer.java OK
 RefactoringAction 1476877184456 TestPlanetExplorer.java ADD void test_PlanetExplorer_turn_right_twice()/2 METHOD
 RefactoringAction 1476877188970 TestPlanetExplorer.java RENAME test_PlanetExplorer_turn_right_twice()/2=>void test_PlanetExplorer_turn_left_twice() METHOD
 EditAction 1476877196005 TestPlanetExplorer.java 1372 7 18 7
+UnitTestCaseAction 1476877198390 TestPlanetExplorer.java OK
+UnitTestSessionAction 1476877198391 TestPlanetExplorer.java OK
+RefactoringAction 1476877243501 TestPlanetExplorer.java ADD void test_PlanetExplorer_turn_left_twice()/2 METHOD
+RefactoringAction 1476877249017 TestPlanetExplorer.java RENAME test_PlanetExplorer_turn_left_twice()/2=>void test_PlanetExplorer_move_forward() METHOD
+EditAction 1476877296256 TestPlanetExplorer.java 1517 8 20 8

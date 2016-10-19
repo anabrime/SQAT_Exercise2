@@ -56,5 +56,11 @@ public class TestPlanetExplorer {
 		String status = pe.executeCommand("l");
 		assertEquals(status, "(0,0,S)");
 	}
+	
+	@Test
+	public void test_PlanetExplorer_move_forward() {
+		String status = pe.executeCommand("f");
+		assertEquals(status, "(0,1,N)");
+	}
 
 }
