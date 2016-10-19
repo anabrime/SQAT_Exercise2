@@ -1,5 +1,9 @@
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Map;
+import java.util.Set;
+
+import javafx.util.Pair;
 
 // Before submitting write your ID and finish time here. Your ID is written on project description sheets.
 // ID:
@@ -12,6 +16,9 @@ public class PlanetExplorer {
 	private int positionX = 0;
 	private int positionY = 0;
 	private Direction direction = Direction.N;
+	
+	private Set<Pair<Integer, Integer>> obstacles = new HashSet<Pair<Integer, Integer>>();
+	private String encounteredObstacles = "";
 	
 	private static enum Direction {
 		N,
@@ -61,6 +68,8 @@ public class PlanetExplorer {
 			if (obstacleX + 1 >= x || obstacleY + 1 >= y) {
 				throw new PlanetExplorerException();
 			}
+			
+			this.obstacles.add(new Pair<Integer, Integer>(obstacleX, obstacleY));
 		}
 	}
 	
@@ -103,6 +112,11 @@ public class PlanetExplorer {
 			} else {
 				this.positionX--;
 			}
+			
+			if (this.checkForObstacle()) {
+				this.encounterObstacle();
+				return this.executeCommand("b");
+			}
 		}
 		
 		if (command.equals("b")) {
@@ -117,16 +131,35 @@ public class PlanetExplorer {
 			}
 		}
 		
+		// Wrapping
 		if (this.positionX < 0) {
 			this.positionX += this.planetSizeX;
 		} else if (this.positionY < 0) {
 			this.positionY += this.planetSizeY;
 		}
 		
-		return "(" + this.positionX + "," + this.positionY + "," + this.direction + ")";
+		return "("
+				+ this.positionX
+				+ ","
+				+ this.positionY
+				+ ","
+				+ this.direction
+				+ ")"
+				+ this.encounteredObstacles;
 	}
 	
 	public String getPlanetSize() {
 		return this.planetSizeX + "x" + this.planetSizeY;
+	}
+	
+	private boolean checkForObstacle() {
+		return this.obstacles.contains(new Pair<Integer, Integer>(this.positionX, this.positionY));
+	}
+	
+	private void encounterObstacle() {
+		String obstacle = "(" + this.positionX + "," + this.positionY + ")";
+		if (!this.encounteredObstacles.contains(obstacle)) {
+			this.encounteredObstacles += obstacle;
+		}
 	}
 }

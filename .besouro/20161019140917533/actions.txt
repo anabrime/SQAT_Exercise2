@@ -211,3 +211,30 @@ UnitTestSessionAction 1476879909926 TestPlanetExplorer.java OK
 RefactoringAction 1476879924171 TestPlanetExplorer.java ADD void test_executeCommand_wrapping()/2 METHOD
 RefactoringAction 1476879934186 TestPlanetExplorer.java RENAME test_executeCommand_wrapping()/2=>void test_executeCommand_locate_obstacle() METHOD
 EditAction 1476879991570 TestPlanetExplorer.java 2706 13 33 12
+UnitTestCaseAction 1476879995234 TestPlanetExplorer.java FAIL
+UnitTestSessionAction 1476879995236 TestPlanetExplorer.java FAIL
+RefactoringAction 1476880148119 PlanetExplorer.java ADD int x FIELD
+RefactoringAction 1476880148121 PlanetExplorer.java ADD int y FIELD
+RefactoringAction 1476880169662 PlanetExplorer.java ADD Obstacle FIELD
+RefactoringAction 1476880192187 PlanetExplorer.java REMOVE obstacles FIELD
+RefactoringAction 1476880206763 PlanetExplorer.java ADD HashMap<Obstacle> obstacles FIELD
+RefactoringAction 1476880249310 PlanetExplorer.java REMOVE obstacles FIELD
+RefactoringAction 1476880265896 PlanetExplorer.java ADD Map<Integer,Integer> obstacles FIELD
+RefactoringAction 1476880271605 PlanetExplorer.java ADD import java.util.Map IMPORT
+RefactoringAction 1476880275623 PlanetExplorer.java ADD import java.util.HashMap IMPORT
+RefactoringAction 1476880558907 PlanetExplorer.java ADD boolean check FIELD
+RefactoringAction 1476880565430 PlanetExplorer.java RENAME check=>boolean checkForObstacle(int, int) METHOD
+RefactoringAction 1476880590555 PlanetExplorer.java RENAME checkForObstacle(int, int)=>boolean checkForObstacle() METHOD
+RefactoringAction 1476880812962 PlanetExplorer.java ADD import java.util.Set IMPORT
+RefactoringAction 1476880817105 PlanetExplorer.java ADD import java.util.HashSet IMPORT
+RefactoringAction 1476880821352 PlanetExplorer.java ADD import javafx.util.Pair IMPORT
+RefactoringAction 1476880828344 PlanetExplorer.java REMOVE import java.util.regex.Matcher IMPORT
+RefactoringAction 1476880828345 PlanetExplorer.java REMOVE import java.util.regex.Pattern IMPORT
+RefactoringAction 1476880952848 PlanetExplorer.java ADD Set<Pair<Integer,Integer>> encounteredObstacles FIELD
+RefactoringAction 1476880988489 PlanetExplorer.java ADD void encounterObstacle() METHOD
+UnitTestCaseAction 1476881196778 TestPlanetExplorer.java OK
+UnitTestSessionAction 1476881196779 TestPlanetExplorer.java OK
+RefactoringAction 1476881242426 TestPlanetExplorer.java ADD void test_executeCommand_locate_obstacle()/2 METHOD
+RefactoringAction 1476881245443 TestPlanetExplorer.java RENAME test_executeCommand_locate_obstacle()/2=>void test_executeCommand_locate_multiple_obstacle() METHOD
+RefactoringAction 1476881246457 TestPlanetExplorer.java RENAME test_executeCommand_locate_multiple_obstacle()=>void test_executeCommand_locate_multiple_obstacles() METHOD
+EditAction 1476881280176 TestPlanetExplorer.java 2981 14 36 13

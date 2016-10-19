@@ -104,5 +104,12 @@ public class TestPlanetExplorer {
 		String status = pe.executeCommand("ffrfff");
 		assertEquals("(1,2,E)(2,2)", status);
 	}
+	
+	@Test
+	public void test_executeCommand_locate_multiple_obstacles() throws PlanetExplorerException {
+		PlanetExplorer pe = new PlanetExplorer(100, 100, "(2,2)(2,1)");
+		String status = pe.executeCommand("ffrfffrflf");
+		assertEquals("(1,1,E)(2,2)(2,1)", status);
+	}
 
 }
