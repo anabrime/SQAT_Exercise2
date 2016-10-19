@@ -50,7 +50,7 @@ public class PlanetExplorer {
 		
 		obstacles = obstacles.replaceFirst("\\(", "");
 		obstacles = obstacles.replaceFirst("\\)$", "");
-		String[] obstacleCoordinates = obstacles.split(")(");
+		String[] obstacleCoordinates = obstacles.split("\\)\\(");
 		
 //		Pattern p = Pattern.compile("(\\d+)");
 //		Matcher m = p.matcher(obstacles);
