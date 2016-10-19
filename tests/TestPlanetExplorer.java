@@ -7,7 +7,7 @@ public class TestPlanetExplorer {
 	private PlanetExplorer pe = new PlanetExplorer(100, 100);
 
 	@Test
-	public void test_PlanetExplorer_create_planet() {
+	public void test_PlanetExplorer_create_planet() throws PlanetExplorerException {
 		PlanetExplorer pe = new PlanetExplorer(100, 100);
 		
 		String planetSize = pe.getPlanetSize();
@@ -16,7 +16,7 @@ public class TestPlanetExplorer {
 	}
 	
 	@Test
-	public void test_PlanetExplorer_create_planet_size2() {
+	public void test_PlanetExplorer_create_planet_size2() throws PlanetExplorerException {
 		PlanetExplorer pe = new PlanetExplorer(100, 200);
 		
 		String planetSize = pe.getPlanetSize();
