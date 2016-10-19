@@ -12,7 +12,7 @@ public class TestPlanetExplorer {
 		
 		String planetSize = pe.getPlanetSize();
 		
-		assertEquals(planetSize, "100x100");
+		assertEquals("100x100", planetSize);
 	}
 	
 	@Test
@@ -21,46 +21,46 @@ public class TestPlanetExplorer {
 		
 		String planetSize = pe.getPlanetSize();
 		
-		assertEquals(planetSize, "100x200");
+		assertEquals("100x200", planetSize);
 	}
 	
 	@Test
 	public void test_executeCommand_landing() {
 		String status = pe.executeCommand("");
 		
-		assertEquals(status, "(0,0,N)");
+		assertEquals("(0,0,N)", status);
 	}
 	
 	@Test
 	public void test_executeCommand_turn_right() {
 		String status = pe.executeCommand("r");
-		assertEquals(status, "(0,0,E)");
+		assertEquals("(0,0,E)", status);
 	}
 	
 	@Test
 	public void test_executeCommand_turn_left() {
 		String status = pe.executeCommand("l");
-		assertEquals(status, "(0,0,W)");
+		assertEquals("(0,0,W)", status);
 	}
 	
 	@Test
 	public void test_executeCommand_turn_right_twice() {
 		pe.executeCommand("r");
 		String status = pe.executeCommand("r");
-		assertEquals(status, "(0,0,S)");
+		assertEquals("(0,0,S)", status);
 	}
 	
 	@Test
 	public void test_executeCommand_turn_left_twice() {
 		pe.executeCommand("l");
 		String status = pe.executeCommand("l");
-		assertEquals(status, "(0,0,S)");
+		assertEquals("(0,0,S)", status);
 	}
 	
 	@Test
 	public void test_executeCommand_move_forward() {
 		String status = pe.executeCommand("f");
-		assertEquals(status, "(0,1,N)");
+		assertEquals("(0,1,N)", status);
 	}
 	
 	@Test
@@ -78,7 +78,7 @@ public class TestPlanetExplorer {
 		
 		// Move backwards
 		String status = pe.executeCommand("b");
-		assertEquals(status, "(4,8,E)");
+		assertEquals("(4,8,E)", status);
 	}
 	
 	@Test
