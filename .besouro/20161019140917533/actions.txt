@@ -23,3 +23,10 @@ UnitTestSessionAction 1476875908058 TestPlanetExplorer.java OK
 RefactoringAction 1476875927601 TestPlanetExplorer.java ADD void test_PlanetExplorer_create_planet()/2 METHOD
 RefactoringAction 1476875935623 TestPlanetExplorer.java RENAME test_PlanetExplorer_create_planet()/2=>void test_PlanetExplorer_create_planet_size2() METHOD
 EditAction 1476875942169 TestPlanetExplorer.java 530 2 6 2
+UnitTestCaseAction 1476875944545 TestPlanetExplorer.java FAIL
+UnitTestSessionAction 1476875944546 TestPlanetExplorer.java FAIL
+RefactoringAction 1476875959185 PlanetExplorer.java ADD int planetX FIELD
+RefactoringAction 1476875967696 PlanetExplorer.java ADD int planetY FIELD
+RefactoringAction 1476875969701 PlanetExplorer.java RENAME planetX=>int planetSizeX FIELD
+RefactoringAction 1476875971206 PlanetExplorer.java RENAME planetY=>int planetSizeY FIELD
+EditAction 1476876002021 PlanetExplorer.java 1568 4 5 0
