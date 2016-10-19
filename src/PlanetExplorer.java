@@ -134,12 +134,12 @@ public class PlanetExplorer {
 		// Wrapping
 		if (this.positionX < 0) {
 			this.positionX += this.planetSizeX;
-		} else if (this.positionX > 0) {
-			this.positionX = this.positionX % this.planetSizeX;
 		} else if (this.positionY < 0) {
 			this.positionY += this.planetSizeY;
-		} else if (this.positionY > 0) {
-			this.positionY = this.positionY % this.planetSizeY;
+		} else if (this.positionX > this.planetSizeX) {
+			this.positionX -= this.planetSizeX;
+		} else if (this.positionY > this.planetSizeY) {
+			this.positionY -= this.planetSizeY;
 		}
 		
 		return "("
