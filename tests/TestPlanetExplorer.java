@@ -84,7 +84,7 @@ public class TestPlanetExplorer {
 	@Test
 	public void test_executeCommand_moving_and_turning_combined() {
 		String status = pe.executeCommand("ffrff");
-		assertEquals(status, "(2,2,E)");
+		assertEquals("(2,2,E)", status);
 	}
 
 }
