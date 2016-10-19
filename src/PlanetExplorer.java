@@ -48,7 +48,7 @@ public class PlanetExplorer {
 			return;
 		}
 		
-		String[] obstacleCoordinates = obstacles.split("\\(|,|\\)\\(|\\)");
+		String[] obstacleCoordinates = obstacles.split("\\(|,|\\)\\(|\\)", 0);
 		
 //		Pattern p = Pattern.compile("(\\d+)");
 //		Matcher m = p.matcher(obstacles);
