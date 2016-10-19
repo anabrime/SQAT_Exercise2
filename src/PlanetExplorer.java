@@ -32,4 +32,8 @@ public class PlanetExplorer {
 		
 		return null;
 	}
+	
+	public String getPlanetSize() {
+		return "100x100";
+	}
 }
