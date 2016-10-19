@@ -44,3 +44,6 @@ RefactoringAction 1476876180242 TestPlanetExplorer.java ADD void test_PlanetExpl
 RefactoringAction 1476876185747 TestPlanetExplorer.java RENAME test_PlanetExplorer_=>void test_PlanetExplorer_turn_left() METHOD
 RefactoringAction 1476876191252 TestPlanetExplorer.java ADD PlanetExplorer pe FIELD
 EditAction 1476876248271 TestPlanetExplorer.java 935 4 11 4
+UnitTestCaseAction 1476876250724 TestPlanetExplorer.java FAIL
+UnitTestSessionAction 1476876250725 TestPlanetExplorer.java FAIL
+EditAction 1476876281866 PlanetExplorer.java 1634 4 6 0
