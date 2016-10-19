@@ -291,3 +291,10 @@ EditAction 1476881789263 PlanetExplorer.java 4993 8 24 0
 UnitTestCaseAction 1476881791799 TestPlanetExplorer.java FAIL
 UnitTestSessionAction 1476881791800 TestPlanetExplorer.java FAIL
 EditAction 1476881991699 PlanetExplorer.java 4987 8 25 0
+UnitTestCaseAction 1476881993971 TestPlanetExplorer.java OK
+UnitTestSessionAction 1476881993972 TestPlanetExplorer.java OK
+RefactoringAction 1476882054843 PlanetExplorer.java REMOVE import java.util.HashMap IMPORT
+RefactoringAction 1476882057394 PlanetExplorer.java REMOVE import java.util.Map IMPORT
+UnitTestCaseAction 1476882083255 TestPlanetExplorer.java OK
+UnitTestSessionAction 1476882083256 TestPlanetExplorer.java OK
+EditAction 1476882132001 PlanetExplorer.java 4966 8 25 0

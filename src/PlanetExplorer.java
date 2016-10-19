@@ -1,13 +1,11 @@
-import java.util.HashMap;
 import java.util.HashSet;
-import java.util.Map;
 import java.util.Set;
 
 import javafx.util.Pair;
 
 // Before submitting write your ID and finish time here. Your ID is written on project description sheets.
-// ID:
-// Finish time:
+// ID: 110
+// Finish time: 16:02 (started at 14:07)
 
 public class PlanetExplorer {
 	private int planetSizeX;
