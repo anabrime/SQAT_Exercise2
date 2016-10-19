@@ -44,6 +44,7 @@ public class PlanetExplorer {
 		 */
 		this(x, y);
 		
+		// No obstacles
 		if (obstacles.equals("")) {
 			return;
 		}
@@ -51,18 +52,6 @@ public class PlanetExplorer {
 		obstacles = obstacles.replaceFirst("\\(", "");
 		obstacles = obstacles.replaceFirst("\\)$", "");
 		String[] obstacleCoordinates = obstacles.split("\\)\\(");
-		
-//		Pattern p = Pattern.compile("(\\d+)");
-//		Matcher m = p.matcher(obstacles);
-		
-//		for (int i = 0; i < m.groupCount(); i++) {
-//			int obstacleX = Integer.parseInt(m.group(i));
-//			int obstacleY = Integer.parseInt(m.group(++i));
-//			
-//			if (obstacleX + 1 >= x || obstacleY + 1 >= y) {
-//				throw new PlanetExplorerException();
-//			}
-//		}
 		
 		for (int i = 0; i < obstacleCoordinates.length; i++) {
 			String[] coords = obstacleCoordinates[i].split(",");
