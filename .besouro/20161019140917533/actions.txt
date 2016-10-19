@@ -38,3 +38,9 @@ EditAction 1476876135472 TestPlanetExplorer.java 730 3 9 3
 UnitTestCaseAction 1476876138477 TestPlanetExplorer.java FAIL
 UnitTestSessionAction 1476876138478 TestPlanetExplorer.java FAIL
 EditAction 1476876149749 PlanetExplorer.java 1573 4 5 0
+UnitTestCaseAction 1476876152185 TestPlanetExplorer.java OK
+UnitTestSessionAction 1476876152186 TestPlanetExplorer.java OK
+RefactoringAction 1476876180242 TestPlanetExplorer.java ADD void test_PlanetExplorer_ FIELD
+RefactoringAction 1476876185747 TestPlanetExplorer.java RENAME test_PlanetExplorer_=>void test_PlanetExplorer_turn_left() METHOD
+RefactoringAction 1476876191252 TestPlanetExplorer.java ADD PlanetExplorer pe FIELD
+EditAction 1476876248271 TestPlanetExplorer.java 935 4 11 4

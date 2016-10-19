@@ -3,6 +3,8 @@ import static org.junit.Assert.*;
 import org.junit.Test;
 
 public class TestPlanetExplorer {
+	
+	private PlanetExplorer pe = new PlanetExplorer(100, 100);
 
 	@Test
 	public void test_PlanetExplorer_create_planet() {
@@ -29,6 +31,12 @@ public class TestPlanetExplorer {
 		String status = pe.executeCommand("");
 		
 		assertEquals(status, "(0,0,N)");
+	}
+	
+	@Test
+	public void test_PlanetExplorer_turn_left() {
+		String status = pe.executeCommand("r");
+		assertEquals(status, "(0,0,E)");
 	}
 
 }
