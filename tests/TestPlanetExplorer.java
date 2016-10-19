@@ -97,5 +97,12 @@ public class TestPlanetExplorer {
 	public void test_PlanetExplorer_placing_obstacle_out_of_bounds() throws PlanetExplorerException {
 		new PlanetExplorer(5, 5, "(4,5)");
 	}
+	
+	@Test
+	public void test_executeCommand_locate_obstacle() throws PlanetExplorerException {
+		PlanetExplorer pe = new PlanetExplorer(100, 100, "(2,2)");
+		String status = pe.executeCommand("ffrfff");
+		assertEquals("(1,2,E)(2,2)", status);
+	}
 
 }

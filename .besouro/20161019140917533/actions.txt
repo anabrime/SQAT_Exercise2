@@ -206,3 +206,8 @@ EditAction 1476879847926 PlanetExplorer.java 4211 6 21 0
 UnitTestCaseAction 1476879850194 TestPlanetExplorer.java OK
 UnitTestSessionAction 1476879850196 TestPlanetExplorer.java OK
 EditAction 1476879907400 PlanetExplorer.java 3865 6 21 0
+UnitTestCaseAction 1476879909925 TestPlanetExplorer.java OK
+UnitTestSessionAction 1476879909926 TestPlanetExplorer.java OK
+RefactoringAction 1476879924171 TestPlanetExplorer.java ADD void test_executeCommand_wrapping()/2 METHOD
+RefactoringAction 1476879934186 TestPlanetExplorer.java RENAME test_executeCommand_wrapping()/2=>void test_executeCommand_locate_obstacle() METHOD
+EditAction 1476879991570 TestPlanetExplorer.java 2706 13 33 12
