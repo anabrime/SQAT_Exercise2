@@ -81,7 +81,19 @@ public class PlanetExplorer {
 			}
 		}
 		
-		return "(0," + this.positionY + "," + this.direction + ")";
+		if (command.equals("b")) {
+			if (this.direction == Direction.N) {
+				this.positionY--;
+			} else if (this.direction == Direction.E) {
+				this.positionX--;
+			} else if (this.direction == Direction.S) {
+				this.positionY++;
+			} else {
+				this.positionX++;
+			}
+		}
+		
+		return "(" + this.positionX + "," + this.positionY + "," + this.direction + ")";
 	}
 	
 	public String getPlanetSize() {
