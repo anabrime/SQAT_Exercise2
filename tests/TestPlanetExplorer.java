@@ -86,5 +86,11 @@ public class TestPlanetExplorer {
 		String status = pe.executeCommand("ffrff");
 		assertEquals("(2,2,E)", status);
 	}
+	
+	@Test
+	public void test_executeCommand_wrapping() {
+		String status = pe.executeCommand("b");
+		assertEquals("(0,99,N)", status);
+	}
 
 }

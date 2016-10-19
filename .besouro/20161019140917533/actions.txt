@@ -141,3 +141,8 @@ EditAction 1476877816944 TestPlanetExplorer.java 2055 10 27 10
 UnitTestCaseAction 1476877819871 TestPlanetExplorer.java FAIL
 UnitTestSessionAction 1476877819872 TestPlanetExplorer.java FAIL
 EditAction 1476878092582 PlanetExplorer.java 3054 6 15 0
+UnitTestCaseAction 1476878098109 TestPlanetExplorer.java OK
+UnitTestSessionAction 1476878098110 TestPlanetExplorer.java OK
+RefactoringAction 1476878161775 TestPlanetExplorer.java ADD void test_executeCommand_moving_and_turning_combined()/2 METHOD
+RefactoringAction 1476878165791 TestPlanetExplorer.java RENAME test_executeCommand_moving_and_turning_combined()/2=>void test_executeCommand_wrapping() METHOD
+EditAction 1476878189289 TestPlanetExplorer.java 2197 11 29 11
