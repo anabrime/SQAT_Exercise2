@@ -18,3 +18,8 @@ UnitTestSessionAction 1476875880530 TestPlanetExplorer.java FAIL
 RefactoringAction 1476875893644 PlanetExplorer.java ADD String getPlanetSize FIELD
 RefactoringAction 1476875895652 PlanetExplorer.java RENAME getPlanetSize=>String getPlanetSize() METHOD
 EditAction 1476875903098 PlanetExplorer.java 1429 4 3 0
+UnitTestCaseAction 1476875908057 TestPlanetExplorer.java OK
+UnitTestSessionAction 1476875908058 TestPlanetExplorer.java OK
+RefactoringAction 1476875927601 TestPlanetExplorer.java ADD void test_PlanetExplorer_create_planet()/2 METHOD
+RefactoringAction 1476875935623 TestPlanetExplorer.java RENAME test_PlanetExplorer_create_planet()/2=>void test_PlanetExplorer_create_planet_size2() METHOD
+EditAction 1476875942169 TestPlanetExplorer.java 530 2 6 2

@@ -12,4 +12,14 @@ public class TestPlanetExplorer {
 		
 		assertEquals(planetSize, "100x100");
 	}
+	
+	@Test
+	public void test_PlanetExplorer_create_planet_size2() {
+		PlanetExplorer pe = new PlanetExplorer(100, 200);
+		
+		String planetSize = pe.getPlanetSize();
+		
+		assertEquals(planetSize, "100x200");
+	}
+
 }
