@@ -161,3 +161,15 @@ EditAction 1476878613278 TestPlanetExplorer.java 2353 12 30 11
 UnitTestCaseAction 1476878616986 TestPlanetExplorer.java FAIL
 UnitTestSessionAction 1476878616987 TestPlanetExplorer.java FAIL
 EditAction 1476878737001 PlanetExplorer.java 3373 6 18 0
+CompilationAction 1476878738956 PlanetExplorer.java
+CompilationAction 1476878738957 TestPlanetExplorer.java
+CompilationAction 1476878738957 TestPlanetExplorer.java
+RefactoringAction 1476878744315 PlanetExplorer.java ADD import java.util.regex.Pattern IMPORT
+RefactoringAction 1476878774429 PlanetExplorer.java ADD import java.util.regex.Matcher IMPORT
+CompilationAction 1476879098664 PlanetExplorer.java
+CompilationAction 1476879115428 TestPlanetExplorer.java
+CompilationAction 1476879115626 TestPlanetExplorer.java
+CompilationAction 1476879115627 TestPlanetExplorer.java
+RefactoringAction 1476879146405 TestPlanetExplorer.java RENAME <initializer /2>=>Exception e FIELD
+RefactoringAction 1476879163954 TestPlanetExplorer.java REMOVE e FIELD
+EditAction 1476879218340 PlanetExplorer.java 3749 6 20 0

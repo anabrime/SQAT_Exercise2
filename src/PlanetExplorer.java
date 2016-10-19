@@ -1,3 +1,5 @@
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 // Before submitting write your ID and finish time here. Your ID is written on project description sheets.
 // ID:
@@ -47,7 +49,17 @@ public class PlanetExplorer {
 			return;
 		}
 		
-		Pattern p = new Pattern("\\(\\d+,\\d\\)*");
+		Pattern p = Pattern.compile("(\\((\\d+),(\\d+)\\))*");
+		Matcher m = p.matcher(obstacles);
+		
+		for (int i = 0; i < m.groupCount(); i++) {
+			int obstacleX = Integer.parseInt(m.group(i));
+			int obstacleY = Integer.parseInt(m.group(++i));
+			
+			if (obstacleX + 1 >= x || obstacleY + 1 >= y) {
+				throw new PlanetExplorerException();
+			}
+		}
 	}
 	
 	public PlanetExplorer(int x, int y) throws PlanetExplorerException {
