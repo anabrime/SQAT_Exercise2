@@ -7,6 +7,10 @@ public class PlanetExplorer {
 	private int planetSizeX;
 	private int planetSizeY;
 	
+	private int positionX = 0;
+	private int positionY = 0;
+	private Direction direction = Direction.N;
+	
 	private static enum Direction {
 		N,
 		E,
@@ -28,8 +32,6 @@ public class PlanetExplorer {
 			return vals[ordinal];
 		}
 	}
-	
-	private Direction direction = Direction.N;
 	
 	public PlanetExplorer(int x, int y, String obstacles){
 	/*	x and y represent the size of the grid.
@@ -63,9 +65,11 @@ public class PlanetExplorer {
 			this.direction = this.direction.right();
 		} else if (command.equals("l")) {
 			this.direction = this.direction.left();
+		} else if (command.equals("f")) {
+			this.positionY++;
 		}
 		
-		return "(0,0," + this.direction + ")";
+		return "(0," + this.positionY + "," + this.direction + ")";
 	}
 	
 	public String getPlanetSize() {
