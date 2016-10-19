@@ -34,9 +34,15 @@ public class TestPlanetExplorer {
 	}
 	
 	@Test
-	public void test_PlanetExplorer_turn_left() {
+	public void test_PlanetExplorer_turn_right() {
 		String status = pe.executeCommand("r");
 		assertEquals(status, "(0,0,E)");
+	}
+	
+	@Test
+	public void test_PlanetExplorer_turn_left() {
+		String status = pe.executeCommand("l");
+		assertEquals(status, "(0,0,W)");
 	}
 
 }
