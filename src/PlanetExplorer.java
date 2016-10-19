@@ -96,6 +96,12 @@ public class PlanetExplorer {
 			}
 		}
 		
+		if (this.positionX < 0) {
+			this.positionX += this.planetSizeX;
+		} else if (this.positionY < 0) {
+			this.positionY += this.planetSizeY;
+		}
+		
 		return "(" + this.positionX + "," + this.positionY + "," + this.direction + ")";
 	}
 	
