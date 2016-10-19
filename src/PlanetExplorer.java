@@ -37,6 +37,8 @@ public class PlanetExplorer {
 		
 		if (command.equals("r")) {
 			return "(0,0,E)";
+		} else if (command.equals("l")) {
+			return "(0,0,W)";
 		}
 		
 		return "(0,0,N)";
