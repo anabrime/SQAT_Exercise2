@@ -48,7 +48,9 @@ public class PlanetExplorer {
 			return;
 		}
 		
-		String[] obstacleCoordinates = obstacles.split("\\(|,|\\)\\(|\\)", 0);
+		obstacles = obstacles.replaceFirst("(", "");
+		obstacles = obstacles.replaceFirst(")$", "");
+		String[] obstacleCoordinates = obstacles.split(")(");
 		
 //		Pattern p = Pattern.compile("(\\d+)");
 //		Matcher m = p.matcher(obstacles);
@@ -63,8 +65,9 @@ public class PlanetExplorer {
 //		}
 		
 		for (int i = 0; i < obstacleCoordinates.length; i++) {
-			int obstacleX = Integer.parseInt(obstacleCoordinates[i]);
-			int obstacleY = Integer.parseInt(obstacleCoordinates[++i]);
+			String[] coords = obstacleCoordinates[i].split(",");
+			int obstacleX = Integer.parseInt(coords[0]);
+			int obstacleY = Integer.parseInt(coords[1]);
 			
 			if (obstacleX + 1 >= x || obstacleY + 1 >= y) {
 				throw new PlanetExplorerException();
