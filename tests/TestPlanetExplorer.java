@@ -62,5 +62,23 @@ public class TestPlanetExplorer {
 		String status = pe.executeCommand("f");
 		assertEquals(status, "(0,1,N)");
 	}
+	
+	@Test
+	public void test_PlanetExplorer_move_backward() {
+		// Move to (0,8)
+		for (int i = 0; i < 8; i++) {
+			pe.executeCommand("f");
+		}
+		
+		// Move to (5,8)
+		pe.executeCommand("r");
+		for (int i = 0; i < 5; i++) {
+			pe.executeCommand("f");
+		}
+		
+		// Move backwards
+		String status = pe.executeCommand("b");
+		assertEquals(status, "(4,8,E)");
+	}
 
 }
