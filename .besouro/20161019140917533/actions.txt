@@ -175,3 +175,6 @@ RefactoringAction 1476879163954 TestPlanetExplorer.java REMOVE e FIELD
 EditAction 1476879218340 PlanetExplorer.java 3749 6 20 0
 EditAction 1476879273913 PlanetExplorer.java 3714 6 20 0
 EditAction 1476879277876 TestPlanetExplorer.java 2446 12 30 11
+UnitTestCaseAction 1476879282484 TestPlanetExplorer.java FAIL
+UnitTestSessionAction 1476879282485 TestPlanetExplorer.java FAIL
+EditAction 1476879319097 PlanetExplorer.java 3698 6 20 0

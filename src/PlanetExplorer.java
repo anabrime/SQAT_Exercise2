@@ -48,7 +48,7 @@ public class PlanetExplorer {
 			return;
 		}
 		
-		Pattern p = Pattern.compile("(\\((\\d+),(\\d+)\\))*");
+		Pattern p = Pattern.compile("(\\d+)");
 		Matcher m = p.matcher(obstacles);
 		
 		for (int i = 0; i < m.groupCount(); i++) {
