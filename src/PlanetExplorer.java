@@ -48,7 +48,7 @@ public class PlanetExplorer {
 			return;
 		}
 		
-		obstacles = obstacles.replaceFirst("(", "");
+		obstacles = obstacles.replaceFirst("\\(", "");
 		obstacles = obstacles.replaceFirst(")$", "");
 		String[] obstacleCoordinates = obstacles.split(")(");
 		
