@@ -129,6 +129,11 @@ public class PlanetExplorer {
 			} else {
 				this.positionX++;
 			}
+			
+			if (this.checkForObstacle()) {
+				this.encounterObstacle();
+				return this.executeCommand("f");
+			}
 		}
 		
 		// Wrapping
