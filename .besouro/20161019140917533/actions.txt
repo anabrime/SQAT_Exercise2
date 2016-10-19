@@ -90,3 +90,8 @@ RefactoringAction 1476876714797 PlanetExplorer.java RENAME next()=>Direction rig
 RefactoringAction 1476876718320 PlanetExplorer.java RENAME next()=>Direction right() METHOD
 RefactoringAction 1476876733848 PlanetExplorer.java ADD Direction left() METHOD
 EditAction 1476876807260 PlanetExplorer.java 2106 6 8 0
+UnitTestCaseAction 1476876809894 TestPlanetExplorer.java FAIL
+UnitTestSessionAction 1476876809895 TestPlanetExplorer.java FAIL
+UnitTestCaseAction 1476877028155 TestPlanetExplorer.java FAIL
+UnitTestSessionAction 1476877028156 TestPlanetExplorer.java FAIL
+EditAction 1476877130553 PlanetExplorer.java 2219 6 11 0

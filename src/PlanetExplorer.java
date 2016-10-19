@@ -16,11 +16,16 @@ public class PlanetExplorer {
 		private static Direction[] vals = values();
 		
 		public Direction right() {
-			return vals[(this.ordinal() + 1) % vals.length];
+			int ordinal = (this.ordinal() + 1) % vals.length; 
+			return vals[ordinal];
 		}
 		
 		public Direction left() {
-			return vals[(this.ordinal() - 1) % vals.length];
+			int ordinal = (this.ordinal() - 1) % vals.length;
+			if (ordinal < 0) {
+				ordinal += vals.length;
+			}
+			return vals[ordinal];
 		}
 	}
 	
