@@ -30,3 +30,8 @@ RefactoringAction 1476875967696 PlanetExplorer.java ADD int planetY FIELD
 RefactoringAction 1476875969701 PlanetExplorer.java RENAME planetX=>int planetSizeX FIELD
 RefactoringAction 1476875971206 PlanetExplorer.java RENAME planetY=>int planetSizeY FIELD
 EditAction 1476876002021 PlanetExplorer.java 1568 4 5 0
+UnitTestCaseAction 1476876004982 TestPlanetExplorer.java OK
+UnitTestSessionAction 1476876004983 TestPlanetExplorer.java OK
+RefactoringAction 1476876065680 TestPlanetExplorer.java ADD void test_PlanetExplorer_ FIELD
+RefactoringAction 1476876069187 TestPlanetExplorer.java RENAME test_PlanetExplorer_=>void test_PlanetExplorer_landing() METHOD
+EditAction 1476876135472 TestPlanetExplorer.java 730 3 9 3
