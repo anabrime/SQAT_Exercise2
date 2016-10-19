@@ -95,7 +95,7 @@ public class TestPlanetExplorer {
 	
 	@Test (expected = PlanetExplorerException.class)
 	public void test_PlanetExplorer_placing_obstacle_out_of_bounds() throws PlanetExplorerException {
-		new PlanetExplorer(5, 5);
+		new PlanetExplorer(5, 5, "(4,5)");
 	}
 
 }
