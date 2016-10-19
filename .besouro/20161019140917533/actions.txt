@@ -121,3 +121,17 @@ EditAction 1476877624753 PlanetExplorer.java 2587 6 13 0
 UnitTestCaseAction 1476877627690 TestPlanetExplorer.java FAIL
 UnitTestSessionAction 1476877627691 TestPlanetExplorer.java FAIL
 EditAction 1476877662573 PlanetExplorer.java 2895 6 14 0
+UnitTestCaseAction 1476877665206 TestPlanetExplorer.java OK
+UnitTestSessionAction 1476877665207 TestPlanetExplorer.java OK
+RefactoringAction 1476877708975 TestPlanetExplorer.java ADD void test_PlanetExplorer FIELD
+RefactoringAction 1476877728994 TestPlanetExplorer.java RENAME test_PlanetExplorer_landing()=>void test_executeCommand_landing() METHOD
+RefactoringAction 1476877731510 TestPlanetExplorer.java RENAME test_PlanetExplorer_turn_right()=>void test_executeCommand_turn_right() METHOD
+RefactoringAction 1476877733528 TestPlanetExplorer.java RENAME test_PlanetExplorer_turn_left()=>void test_executeCommand_turn_left() METHOD
+RefactoringAction 1476877735043 TestPlanetExplorer.java RENAME test_PlanetExplorer_turn_right_twice()=>void test_executeCommand_turn_right_twice() METHOD
+RefactoringAction 1476877738058 TestPlanetExplorer.java RENAME test_PlanetExplorer_turn_left_twice()=>void test_executeCommand_turn_left_twice() METHOD
+RefactoringAction 1476877740074 TestPlanetExplorer.java RENAME test_PlanetExplorer_move_forward()=>void test_executeCommand_move_forward() METHOD
+RefactoringAction 1476877742591 TestPlanetExplorer.java RENAME test_PlanetExplorer_move_backward()=>void test_executeCommand_move_backward() METHOD
+RefactoringAction 1476877745107 TestPlanetExplorer.java RENAME test_PlanetExplorer=>void test_executeCommand FIELD
+RefactoringAction 1476877746123 TestPlanetExplorer.java RENAME test_executeCommand=>void test_executeCommand_ FIELD
+RefactoringAction 1476877753633 TestPlanetExplorer.java RENAME test_executeCommand_=>void test_executeCommand_moving_and_turning_combined() METHOD
+EditAction 1476877788811 TestPlanetExplorer.java 2055 10 27 10
