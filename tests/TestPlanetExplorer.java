@@ -92,5 +92,10 @@ public class TestPlanetExplorer {
 		String status = pe.executeCommand("b");
 		assertEquals("(0,99,N)", status);
 	}
+	
+	@Test (expected = PlanetExplorerException.class)
+	public void test_PlanetExplorer_placing_obstacle_out_of_bounds() {
+		new PlanetExplorer(5, 5);
+	}
 
 }

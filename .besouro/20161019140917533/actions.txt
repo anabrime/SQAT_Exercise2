@@ -152,3 +152,9 @@ EditAction 1476878238582 PlanetExplorer.java 3208 6 16 0
 UnitTestCaseAction 1476878241639 TestPlanetExplorer.java OK
 UnitTestSessionAction 1476878241640 TestPlanetExplorer.java OK
 EditAction 1476878295062 TestPlanetExplorer.java 2197 11 29 11
+UnitTestCaseAction 1476878297801 TestPlanetExplorer.java OK
+UnitTestSessionAction 1476878297802 TestPlanetExplorer.java OK
+RefactoringAction 1476878569607 TestPlanetExplorer.java ADD void test_ FIELD
+RefactoringAction 1476878575122 TestPlanetExplorer.java RENAME test_=>void test_PlanetExplorer() METHOD
+RefactoringAction 1476878586163 TestPlanetExplorer.java RENAME test_PlanetExplorer()=>void test_PlanetExplorer_placing_obstacle_out_of_bounds() METHOD
+EditAction 1476878613278 TestPlanetExplorer.java 2353 12 30 11
