@@ -64,3 +64,29 @@ UnitTestSessionAction 1476876345268 TestPlanetExplorer.java OK
 RefactoringAction 1476876373865 TestPlanetExplorer.java ADD void test_PlanetExplorer_turn_right()/2 METHOD
 RefactoringAction 1476876376372 TestPlanetExplorer.java RENAME test_PlanetExplorer_turn_right()/2=>void test_PlanetExplorer_turn_right_twice() METHOD
 EditAction 1476876391142 TestPlanetExplorer.java 1197 6 15 6
+UnitTestCaseAction 1476876393287 TestPlanetExplorer.java FAIL
+UnitTestSessionAction 1476876393288 TestPlanetExplorer.java FAIL
+RefactoringAction 1476876457464 PlanetExplorer.java RENAME String=>enum Direction null
+RefactoringAction 1476876482472 PlanetExplorer.java ADD Direction N FIELD
+RefactoringAction 1476876484480 PlanetExplorer.java ADD Direction S FIELD
+RefactoringAction 1476876484483 PlanetExplorer.java ADD Direction W FIELD
+RefactoringAction 1476876485489 PlanetExplorer.java ADD Direction E FIELD
+RefactoringAction 1476876502506 PlanetExplorer.java ADD Direction() METHOD
+RefactoringAction 1476876502507 PlanetExplorer.java ADD void PlanetExplorer(int, int, String) METHOD
+RefactoringAction 1476876502521 PlanetExplorer.java ADD void PlanetExplorer(int, int) METHOD
+RefactoringAction 1476876502522 PlanetExplorer.java ADD String executeCommand(String) METHOD
+RefactoringAction 1476876502523 PlanetExplorer.java ADD String getPlanetSize() METHOD
+RefactoringAction 1476876506030 PlanetExplorer.java RENAME Direction()=>Direction(String) METHOD
+RefactoringAction 1476876507037 PlanetExplorer.java ADD PlanetExplorer(int, int, String) METHOD
+RefactoringAction 1476876507038 PlanetExplorer.java ADD PlanetExplorer(int, int) METHOD
+RefactoringAction 1476876507039 PlanetExplorer.java ADD String executeCommand(String) METHOD
+RefactoringAction 1476876507040 PlanetExplorer.java ADD String getPlanetSize() METHOD
+RefactoringAction 1476876514556 PlanetExplorer.java REMOVE Direction(String) METHOD
+RefactoringAction 1476876533079 PlanetExplorer.java ADD Direction direction FIELD
+RefactoringAction 1476876576098 PlanetExplorer.java ADD Direction next() METHOD
+RefactoringAction 1476876591616 PlanetExplorer.java ADD Direction FIELD
+RefactoringAction 1476876706774 PlanetExplorer.java RENAME E/2=>Direction S FIELD
+RefactoringAction 1476876714797 PlanetExplorer.java RENAME next()=>Direction right() METHOD
+RefactoringAction 1476876718320 PlanetExplorer.java RENAME next()=>Direction right() METHOD
+RefactoringAction 1476876733848 PlanetExplorer.java ADD Direction left() METHOD
+EditAction 1476876807260 PlanetExplorer.java 2106 6 8 0

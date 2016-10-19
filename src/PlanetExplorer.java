@@ -7,6 +7,25 @@ public class PlanetExplorer {
 	private int planetSizeX;
 	private int planetSizeY;
 	
+	private static enum Direction {
+		N,
+		E,
+		S,
+		W;
+		
+		private static Direction[] vals = values();
+		
+		public Direction right() {
+			return vals[(this.ordinal() + 1) % vals.length];
+		}
+		
+		public Direction left() {
+			return vals[(this.ordinal() - 1) % vals.length];
+		}
+	}
+	
+	private Direction direction = Direction.N;
+	
 	public PlanetExplorer(int x, int y, String obstacles){
 	/*	x and y represent the size of the grid.
 	 *  Obstacles is a String formatted as follows: "(obs1_x,obs1_y)(obs2_x,obs2_y)...(obsN_x,obsN_y)" with no white spaces. 
@@ -36,12 +55,12 @@ public class PlanetExplorer {
 		 */
 		
 		if (command.equals("r")) {
-			return "(0,0,E)";
+			this.direction = this.direction.right();
 		} else if (command.equals("l")) {
-			return "(0,0,W)";
+			this.direction = this.direction.left();
 		}
 		
-		return "(0,0,N)";
+		return "(0,0," + this.direction + ")";
 	}
 	
 	public String getPlanetSize() {
