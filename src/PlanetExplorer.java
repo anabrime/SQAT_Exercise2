@@ -48,12 +48,23 @@ public class PlanetExplorer {
 			return;
 		}
 		
-		Pattern p = Pattern.compile("(\\d+)");
-		Matcher m = p.matcher(obstacles);
+		String[] obstacleCoordinates = obstacles.split("\\(|,|\\)\\(|\\)");
 		
-		for (int i = 0; i < m.groupCount(); i++) {
-			int obstacleX = Integer.parseInt(m.group(i));
-			int obstacleY = Integer.parseInt(m.group(++i));
+//		Pattern p = Pattern.compile("(\\d+)");
+//		Matcher m = p.matcher(obstacles);
+		
+//		for (int i = 0; i < m.groupCount(); i++) {
+//			int obstacleX = Integer.parseInt(m.group(i));
+//			int obstacleY = Integer.parseInt(m.group(++i));
+//			
+//			if (obstacleX + 1 >= x || obstacleY + 1 >= y) {
+//				throw new PlanetExplorerException();
+//			}
+//		}
+		
+		for (int i = 0; i < obstacleCoordinates.length; i++) {
+			int obstacleX = Integer.parseInt(obstacleCoordinates[i]);
+			int obstacleY = Integer.parseInt(obstacleCoordinates[++i]);
 			
 			if (obstacleX + 1 >= x || obstacleY + 1 >= y) {
 				throw new PlanetExplorerException();
