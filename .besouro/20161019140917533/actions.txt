@@ -243,3 +243,6 @@ UnitTestSessionAction 1476881282778 TestPlanetExplorer.java OK
 RefactoringAction 1476881301039 TestPlanetExplorer.java ADD void test_executeCommand_locate_multiple_obstacles()/2 METHOD
 RefactoringAction 1476881308052 TestPlanetExplorer.java RENAME test_executeCommand_locate_multiple_obstacles()/2=>void test_executeCommand_tour_around_the_planet() METHOD
 EditAction 1476881346725 TestPlanetExplorer.java 3269 15 39 14
+UnitTestCaseAction 1476881349273 TestPlanetExplorer.java FAIL
+UnitTestSessionAction 1476881349274 TestPlanetExplorer.java FAIL
+EditAction 1476881393043 TestPlanetExplorer.java 3269 15 39 14
