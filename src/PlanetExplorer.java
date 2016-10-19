@@ -42,8 +42,7 @@ public class PlanetExplorer {
 		 * Example use: For a 100x100 grid with two obstacles at coordinates (5,5) and (7,8)
 		 * PlanetExplorer explorer = new PlanetExplorer(100,100,"(5,5)(7,8)")
 		 */
-		this.planetSizeX = x;
-		this.planetSizeY = y;
+		this(x, y);
 		
 		if (obstacles.equals("")) {
 			return;
@@ -62,8 +61,9 @@ public class PlanetExplorer {
 		}
 	}
 	
-	public PlanetExplorer(int x, int y) throws PlanetExplorerException {
-		this(x, y, "");
+	public PlanetExplorer(int x, int y) {
+		this.planetSizeX = x;
+		this.planetSizeY = y;
 	}
 	
 	public String executeCommand(String command) {
