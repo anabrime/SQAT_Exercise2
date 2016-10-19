@@ -150,3 +150,5 @@
 1476881196780 test-addition 1 1272 true
 1476881196781 test-addition 2 1272 true
 1476881196782 test-addition 1 1272 true
+1476881282778 test-addition 1 40 true
+1476881282779 test-addition 1 40 true

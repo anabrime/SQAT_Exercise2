@@ -111,5 +111,12 @@ public class TestPlanetExplorer {
 		String status = pe.executeCommand("ffrfffrflf");
 		assertEquals("(1,1,E)(2,2)(2,1)", status);
 	}
+	
+	@Test
+	public void test_executeCommand_tour_around_the_planet() throws PlanetExplorerException {
+		PlanetExplorer pe = new PlanetExplorer(6, 6, "(2,2)(0,5)(5,0)");
+		String status = pe.executeCommand("ffrfffrbbblllfrfrbbl");
+		assertEquals("(0,0,N)(2,2)(0,5)(5,0)", status);
+	}
 
 }
