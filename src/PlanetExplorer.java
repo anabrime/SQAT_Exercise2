@@ -136,9 +136,9 @@ public class PlanetExplorer {
 			this.positionX += this.planetSizeX;
 		} else if (this.positionY < 0) {
 			this.positionY += this.planetSizeY;
-		} else if (this.positionX > this.planetSizeX) {
+		} else if (this.positionX >= this.planetSizeX) {
 			this.positionX -= this.planetSizeX;
-		} else if (this.positionY > this.planetSizeY) {
+		} else if (this.positionY >= this.planetSizeY) {
 			this.positionY -= this.planetSizeY;
 		}
 		
