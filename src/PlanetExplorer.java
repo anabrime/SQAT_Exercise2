@@ -49,7 +49,7 @@ public class PlanetExplorer {
 		}
 		
 		obstacles = obstacles.replaceFirst("\\(", "");
-		obstacles = obstacles.replaceFirst(")$", "");
+		obstacles = obstacles.replaceFirst("\\)$", "");
 		String[] obstacleCoordinates = obstacles.split(")(");
 		
 //		Pattern p = Pattern.compile("(\\d+)");
