@@ -59,3 +59,8 @@ EditAction 1476876330912 PlanetExplorer.java 1693 4 6 0
 UnitTestCaseAction 1476876332917 TestPlanetExplorer.java OK
 UnitTestSessionAction 1476876332918 TestPlanetExplorer.java OK
 EditAction 1476876343166 TestPlanetExplorer.java 1021 5 12 5
+UnitTestCaseAction 1476876345267 TestPlanetExplorer.java OK
+UnitTestSessionAction 1476876345268 TestPlanetExplorer.java OK
+RefactoringAction 1476876373865 TestPlanetExplorer.java ADD void test_PlanetExplorer_turn_right()/2 METHOD
+RefactoringAction 1476876376372 TestPlanetExplorer.java RENAME test_PlanetExplorer_turn_right()/2=>void test_PlanetExplorer_turn_right_twice() METHOD
+EditAction 1476876391142 TestPlanetExplorer.java 1197 6 15 6
