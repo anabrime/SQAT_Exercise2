@@ -33,7 +33,7 @@ public class PlanetExplorer {
 		}
 	}
 	
-	public PlanetExplorer(int x, int y, String obstacles) {
+	public PlanetExplorer(int x, int y, String obstacles) throws PlanetExplorerException {
 		/* x and y represent the size of the grid.
 		 * Obstacles is a String formatted as follows: "(obs1_x,obs1_y)(obs2_x,obs2_y)...(obsN_x,obsN_y)" with no white spaces. 
 		 
@@ -42,9 +42,15 @@ public class PlanetExplorer {
 		 */
 		this.planetSizeX = x;
 		this.planetSizeY = y;
+		
+		if (obstacles.equals("")) {
+			return;
+		}
+		
+		Pattern p = new Pattern("\\(\\d+,\\d\\)*");
 	}
 	
-	public PlanetExplorer(int x, int y) {
+	public PlanetExplorer(int x, int y) throws PlanetExplorerException {
 		this(x, y, "");
 	}
 	
