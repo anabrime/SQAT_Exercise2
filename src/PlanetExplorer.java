@@ -112,11 +112,6 @@ public class PlanetExplorer {
 			} else {
 				this.positionX--;
 			}
-			
-			if (this.checkForObstacle()) {
-				this.encounterObstacle();
-				return this.executeCommand("b");
-			}
 		}
 		
 		if (command.equals("b")) {
@@ -129,11 +124,6 @@ public class PlanetExplorer {
 			} else {
 				this.positionX++;
 			}
-			
-			if (this.checkForObstacle()) {
-				this.encounterObstacle();
-				return this.executeCommand("f");
-			}
 		}
 		
 		// Wrapping
@@ -145,6 +135,15 @@ public class PlanetExplorer {
 			this.positionX -= this.planetSizeX;
 		} else if (this.positionY >= this.planetSizeY) {
 			this.positionY -= this.planetSizeY;
+		}
+		
+		if (this.checkForObstacle()) {
+			this.encounterObstacle();
+			if (command.equals("f")) {
+				return this.executeCommand("b");
+			} else if (command.equals("b")) {
+				return this.executeCommand("f");
+			}
 		}
 		
 		return "("
